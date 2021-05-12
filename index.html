@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Provhyn</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="grisClaroProvhyn">
+    <!-- TITULO -->
+
+    <header class="flex flex-col z-40 fixed grisClaroProvhyn w-full">
+      <!-- NAV -->
+      <nav
+        id="site-menu"
+        class="
+          nav
+          flex flex-col
+          text-white
+          sm:flex-row
+          w-full
+          justify-between
+          items-center
+          px-4
+          sm:px-6
+          py-2
+          shadow-2xl
+        "
+      >
+        <div
+          class="
+            w-full
+            sm:w-auto
+            self-start
+            sm:self-center
+            flex flex-row
+            sm:flex-none
+            flex-no-wrap
+            justify-between
+            items-center
+          "
+        >
+          <img
+            id="logoProvHyN"
+            class="logoCss"
+            src="./images/logoProvHyN.png"
+            alt=""
+            loading="lazy"
+          />
+          <!--  start Hamburguer Menu    -->
+          <button
+            id="menuBtn"
+            class="hamburger block sm:hidden focus:outline-none"
+            type="button"
+            onclick="navToggle()"
+          >
+            <span class="hamburger__top-bun"></span
+            ><span class="hamburger__bottom-bun"></span>
+          </button>
+          <!--  end Hamburguer Menu    -->
+        </div>
+
+        <div
+          id="menu"
+          class="
+            uppercase
+            w-full
+            px-8
+            sm:w-auto
+            self-end
+            sm:self-center
+            sm:flex
+            flex-col
+            sm:flex-row
+            items-center
+            h-full
+            py-8
+            pb-4
+            sm:py-0
+            sm:pb-0
+            hidden
+          "
+        >
+          <a
+            class="text-lg sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2 lg:text-xl"
+            href="#top"
+            >inicio</a
+          >
+          <a
+            class="text-lg sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2 lg:text-xl"
+            href="#servicios"
+            >servicios</a
+          >
+          <a
+            class="text-lg sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2 lg:text-xl"
+            href="#productos"
+            >productos</a
+          >
+
+          <a
+            class="text-lg sm:w-auto sm:px-4 py-2 sm:py-1 sm:pt-2 lg:text-xl"
+            href="#contacto"
+            >contacto</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <!--start Hero Slider  -->
+    <div class="w-full">
+      <div class="gallery js-flickity" data-flickity='{ "autoPlay": true }'>
+        <img
+          class="gallery-cell"
+          src="./images/slide01.jpg"
+          style="width: 100%"
+          loading="lazy"
+        />
+        <img
+          class="gallery-cell"
+          src="./images/slide02.jpg"
+          style="width: 100%"
+          loading="lazy"
+        />
+        <img
+          class="gallery-cell"
+          src="./images/slide03.jpg"
+          style="width: 100%"
+          loading="lazy"
+        />
+        <img
+          class="gallery-cell"
+          src="./images/slide04.jpg"
+          style="width: 100%"
+          loading="lazy"
+        />
+      </div>
+    </div>
+    <!--end Hero Slider  -->
+
+    <!-- TITULO -->
+    <div id="servicios"></div>
+
+    <div class="orangeProvhyn shadow-2xl mx-auto p-4">
+      <h2 class="uppercase text-white text-3xl text-center">servicios</h2>
+    </div>
+    <!-- TITULO -->
+    <!-- SERVICIOS -->
+
+    <section class="bg-overlay bg-white text-white text-center py-16">
+      <div class="flex flex-wrap justify-between items-baseline">
+        <div
+          class="
+            sm:w-1/2
+            md:w-1/3
+            mx-auto
+            flex flex-col
+            items-center
+            justify-center
+            mt-2
+            p-4
+          "
+        >
+          <div
+            class="max-w-sm rounded overflow-hidden bg-overlay-dark shadow-2xl"
+          >
+            <div
+              class="rounded-full"
+              style="
+                background-image: url(./images/factory3.jpg);
+                position: absolute;
+                height: 5rem;
+                width: 5rem;
+                background-color: white;
+                background-size: contain;
+                background-repeat: no-repeat;
+              "
+            ></div>
+            <img
+              class="w-full p-2 rounded-full"
+              src="./images/services01.jpg"
+              alt=""
+              loading="lazy"
+            />
+            <div class="p-6">
+              <h3 class="py-4 font-bold text-2xl md:text-3xl">REPARACIONES</h3>
+              <p class="text-lg md:text-xl">
+                • Reemplazos de sellos a toda clase de componentes neumáticos e
+                hidráulicos <br />
+                • Reparación o sustitución de piezas <br />
+                • Limpieza, lubricación y verificación del correcto
+                funcionamiento
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="
+            sm:w-1/2
+            md:w-1/3
+            mx-auto
+            flex flex-col
+            items-center
+            justify-center
+            mt-2
+            p-4
+          "
+        >
+          <div
+            class="max-w-sm rounded overflow-hidden bg-overlay-dark shadow-2xl"
+          >
+            <div
+              class="rounded-full"
+              style="
+                background-image: url(./images/factory2.jpg);
+                position: absolute;
+                height: 5rem;
+                width: 5rem;
+                background-color: white;
+                background-size: contain;
+                background-repeat: no-repeat;
+              "
+            ></div>
+            <img
+              class="w-full p-2 h-full rounded-full"
+              src="./images/services02.jpg"
+              alt=""
+              loading="lazy"
+            />
+            <div class="p-6">
+              <h3 class="py-4 font-bold text-2xl md:text-3xl">FABRICACION</h3>
+              <p class="text-lg md:text-xl">
+                Diseño y construcción de: <br />
+                • Centrales Hidráulicas hasta 100 HP
+                <br />
+                • Cilindros hidráulicas modelo CH hasta 10” <br />
+                • Mangueras hidráulicas para baja y alta presión
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="
+            sm:w-1/2
+            md:w-1/3
+            mx-auto
+            flex flex-col
+            items-center
+            justify-center
+            mt-2
+            p-4
+          "
+        >
+          <div
+            class="max-w-sm rounded overflow-hidden bg-overlay-dark shadow-2xl"
+          >
+            <div
+              class="rounded-full shadow-2xl"
+              style="
+                background-image: url(./images/factory.jpg);
+                position: absolute;
+                height: 5rem;
+                width: 5rem;
+                background-color: white;
+                background-size: contain;
+                background-repeat: no-repeat;
+              "
+            ></div>
+            <img
+              class="w-full p-2 rounded-full"
+              src="./images/services03.png"
+              alt=""
+              loading="lazy"
+            />
+            <div class="p-6">
+              <div>
+                <h3
+                  style="line-height: 100%"
+                  class="py-4 font-bold text-2xl md:text-3xl"
+                >
+                  SOLUCIONES INDUSTRIALES
+                </h3>
+              </div>
+              <p class="text-lg md:text-xl">
+                • Mejoras en la calidad de aire<br />
+                • Mecanizados de piezas<br />
+                • Diseño 3D y planos de fabricación<br />
+                • Automatización de procesos<br />
+                <br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PRUDUCTOS -->
+    <div id="productos"></div>
+
+    <div class="grisClaroProvhyn shadow-2xl mx-auto p-4">
+      <h2 class="uppercase text-white text-3xl text-center">productos</h2>
+    </div>
+
+    <!-- HIDRAULICA -->
+
+    <section
+      class="bg-fixed orangeProvhyn"
+      style="background-image: url(./images/db3.png); background-size: cover"
+    >
+      <div class="text-white container mx-auto py-8">
+        <div class="sm:flex sm:flex-wrap">
+          <article
+            class="
+              px-8
+              text-center text-white
+              flex flex-col
+              justify-center
+              sm:w-full
+              px-8
+              lg:w-1/2
+            "
+          >
+            <h3 class="uppercase underline text-3xl font-bold">hidráulica</h3>
+            <ul class="text-2xl mt-4 px-4 sm:px-8">
+              <li>• Bombas y motores</li>
+              <li>• Actuadores hidráulicos</li>
+              <li>• Electroválvulas y válvulas especiales</li>
+              <li>• Accesorios de las centrales.</li>
+              <li>• Filtros de succión y retorno.</li>
+            </ul>
+          </article>
+          <article class="my-8 text-center sm:w-full px-4 lg:w-1/2">
+            <img
+              class="
+                rounded-full
+                shadow-2xl
+                transition
+                duration-500
+                ease-in-out
+                transform
+                hover:-translate-y-1
+              "
+              src="./images/hidraulica.jpg"
+              loading="lazy"
+            />
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- NEUMATICA -->
+
+    <section
+      class="bg-fixed"
+      style="background-image: url(./images/db2.png); background-size: cover"
+    >
+      <div class="text-white container mx-auto py-8">
+        <div class="sm:flex sm:flex-wrap">
+          <article class="my-8 text-center sm:w-full px-4 lg:w-1/2">
+            <img
+              class="
+                rounded-full
+                shadow-2xl
+                transition
+                duration-500
+                ease-in-out
+                transform
+                hover:-translate-y-1
+              "
+              src="./images/neumatica.jpg"
+              loading="lazy"
+            />
+          </article>
+          <article
+            class="
+              my-8
+              text-center
+              flex flex-col
+              justify-center
+              sm:w-full
+              px-4
+              lg:w-1/2
+            "
+          >
+            <h3 class="uppercase underline text-3xl font-bold">neumática</h3>
+            <ul class="text-2xl mt-4 px-4 sm:px-8">
+              <li>• Microcilindros y cilindros</li>
+              <li>• Electroválvulas y válvulas mecánicas</li>
+              <li>• Unidad de mantenimiento FRL</li>
+              <li>• Conexiones y Tubos</li>
+              <li>• Tecnología de Vacio</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HIDRAULICA2
+
+    <section
+      class="orangeProvhyn bg-cover bg-fixed sm:block"
+      style="background-image: url(/public/images/db3.png)"
+    >
+      <div class="text-white container mx-auto py-8">
+        <div class="sm:flex sm:flex-wrap">
+          <article class="my-8 text-center sm:w-full px-4 lg:w-1/2">
+            <img
+              class="rounded-full shadow-2xl transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
+              src="/public/images/hidraulica.jpg"
+            />
+          </article>
+          <article
+            class="px-8 text-center text-white flex flex-col justify-center sm:w-full px-8 lg:w-1/2"
+          >
+            <h3 class="uppercase underline text-3xl font-bold">hidraulica</h3>
+            <ul class="text-2xl mt-4 px-4 sm:px-8">
+              <li>• Bombas y motores</li>
+              <li>• Actuadores hidráulicos</li>
+              <li>• Electroválvulas y válvulas especiales</li>
+              <li>• Accesorios de las centrales.</li>
+              <li>• Filtros de succión y retorno.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+  -->
+    <!-- Marcas -->
+    <section class="flex-col bg-overlay2 bg-white text-white text-center">
+      <div class="text-black p-12 md:p-16 md:text-xl">
+        <h4 class="text-3xl">MARCAS</h4>
+        <h5 class="text-xl font-normal">
+          Contamos con el asesoramiento y productos de diversas empresas
+          ajustándonos a la necesidad del cliente. De esta manera buscamos una
+          <span class="texto02"> rápida respuesta </span> y sobre todo una
+          <span class="texto02"> mejor oferta.</span>
+        </h5>
+      </div>
+
+      <div class="slider">
+        <div class="slide-track">
+          <div class="slide">
+            <img
+              src="./images/brand-airtak.png"
+              height="100"
+              width="250"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./images/brand-cid.png"
+              height="100"
+              width="250"
+              alt="cid"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="slide">
+            <img
+              src="./images/brand-festo.png"
+              height="100"
+              width="250"
+              alt="festo"
+              loading="lazy"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./images/brand-jefferson.png"
+              height="100"
+              width="250"
+              alt="jefferson"
+              loading="lazy"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./images/brand-mc.png"
+              height="100"
+              width="250"
+              alt="mc"
+              loading="lazy"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./images/brand-micro.png"
+              height="100"
+              width="250"
+              alt="micro"
+              loading="lazy"
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./images/brand-smc.png"
+              height="100"
+              width="250"
+              alt="smc"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contacto -->
+
+    <div id="contacto"></div>
+    <div class="mx-auto p-4 shadow-2xl">
+      <h2 class="uppercase text-white text-3xl text-center">contacto</h2>
+    </div>
+    <!-- Contacto -->
+
+    <section class="bg-overlay3 flex flex-col sm:flex-row text-white py-16">
+      <div class="orange-hover w-full text-center text-lg sm:w-1/2 py-8">
+        <h3 class="my-4 font-semibold text-3xl">PROVHYN<br /></h3>
+
+        <div class="py-4">
+          <p class="">
+            Moreno , Buenos Aires <br />
+            Argentina
+          </p>
+          <i class="mt-2 fas fa-map-marked-alt fa-2x"></i>
+        </div>
+        <div class="py-4">
+          <p class="">(0237) 405-9054 <br /></p>
+          <i class="mt-2 fas fa-phone fa-2x"></i>
+        </div>
+        <div class="py-4">
+          <p class="">11-5997-1479<br /></p>
+          <i class="mt-2 fas fa-mobile-alt fa-2x"></i>
+        </div>
+        <div class="py-4">
+          <p class="">info@provhyn.com.ar</p>
+          <i class="mt-2 fas fa-envelope fa-2x"></i>
+        </div>
+      </div>
+
+      <div class="w-full sm:w-1/2 py-8">
+        <div class="flex justify-center">
+          <h3 class="my-4 font-semibold text-3xl">CONTACTO<br /></h3>
+        </div>
+        <form class="px-8 lg:px-8" action="sendmail.php" method="POST">
+          <div class="mb-4">
+            <input
+              class="css-input w-full py-2 px-3"
+              id="nombre"
+              type="text"
+              placeholder="Nombre"
+              name="elNombre"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <input
+              class="css-input w-full py-2 px-3"
+              id="empresa"
+              type="text"
+              placeholder="Empresa"
+              name="elNombre"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <input
+              class="css-input w-full py-2 px-3"
+              id="telefono"
+              type="text"
+              placeholder="Teléfono"
+              name="elTel"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <input
+              class="css-input w-full py-2 px-3"
+              id="correo"
+              type="email"
+              placeholder="Correo Electrónico"
+              name="elCorreo"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <textarea
+              class="resize css-input w-full py-2 px-3"
+              placeholder="Su consulta"
+              name="elMensaje"
+            ></textarea>
+          </div>
+
+          <div class="flex justify-center orange-hover">
+            <button class="py-4 px-8 uppercase text-md">enviar</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!--Contacto-->
+
+    <!-- FOOTER -->
+    <footer class="text-white py-4 px-4 shadow-2xl">
+      <div class="text-center">
+        &copy;
+        <script>
+          new Date().getFullYear() && document.write(new Date().getFullYear());
+        </script>
+        PROVHYN All rights reserved.
+      </div>
+    </footer>
+    <!-- FOOTER -->
+
+    <!-- Social WhatsApp -->
+    <div>
+      <a
+        href="https://api.whatsapp.com/send?phone=541132866693&text=Hola!%20quer%C3%ADa%20conocer%20un%20poco%20mas%20acerca%20de"
+        class="whatsapp"
+        target="_blank"
+      >
+        <img src="./images/whatsapp.png" alt="whatsapp" />
+      </a>
+    </div>
+    <!-- Social WhatsApp -->
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script src="./js/script.js" defer></script>
+    <script>
+      if ("loading" in HTMLImageElement.prototype) {
+        console.log("Browser support `loading`...");
+      } else {
+        console.log("Not supported");
+      }
+    </script>
+  </body>
+</html>
